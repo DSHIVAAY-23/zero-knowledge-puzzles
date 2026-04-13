@@ -4,7 +4,13 @@ pragma circom 2.1.4;
 // Return using signal 'c'.
 
 template Equality() {
-   // Your Code Here..
+    signal input in[3];
+    signal output c;
+    in[0]===in[1];
+   in[1]==in[2];
+    c<==in[1];
+
+
 
    
 }
