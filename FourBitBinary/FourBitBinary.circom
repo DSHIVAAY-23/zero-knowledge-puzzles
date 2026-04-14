@@ -1,3 +1,4 @@
+
 pragma circom 2.1.8;
 
 // Create a circuit that takes an array of four signals
@@ -17,6 +18,9 @@ pragma circom 2.1.8;
 template FourBitBinary() {
     signal input in[4];
     signal input n;
+    for(var i =0;i<n;i++){
+    in[i] * (in[i] - 1) === 0;
+    }
 
 }
 
